@@ -34,23 +34,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Log.d("Dicee","ze button has been pressed!");//debugging
+                Log.d("Dicee","ze button has been pressed!");//debugging, the .d identifies this as a debugging message in the logs
 
                 Random randomNumberGenerator = new Random();
                 int number = randomNumberGenerator.nextInt(6);
                 int number2 = randomNumberGenerator.nextInt(6);
 
-                Log.d("Dicee","The random number is "+number);//debugging
+                Log.d("Dicee","The random number is "+number);//debugging, the .d identifies this as a debugging message in the logs
 
                 leftDice.setImageResource(diceArray[number]);
                 rightDice.setImageResource(diceArray[number2]);
 
             }//end onClick
         });//end rollButton listener
-
-
     }//end onCreate
-
-
 }// end class
 
